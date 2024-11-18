@@ -11,16 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark  pt-3">
         <div class="container">
 
-            <a class="navbar-brand d-flex align-items-center " href="#" >
-                <i class="fas fa-code fa-2x text-warning"></i>
-                <h5 class="text-white ps-2 mb-0">Portfolio</h5>
+            <a class="navbar-brand d-flex align-items-center justify-content-center " href="#">
+                <span><img src="images/logo.png" class="img-fluid mx-0" width="45"></span>
+                <h5 class=" ps-2 mb-0 mt-2  mx-0 text-dark">AdaDevs</h5>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,17 +30,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#about">About</a>
+                        <a class="nav-link text-dark" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#projects">Projects</a>
+                        <a class="nav-link text-dark" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#contact">Contact</a>
+                        <a class="nav-link text-dark " href="#team_memebers">Members</a>
                     </li>
                     <li class="nav-item">
-                        <!--Add Your CV Here-->
-                        <a class="nav-link text-white" href="#resume">Resume</a>
+                        <a class="nav-link text-dark" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -49,10 +48,10 @@
 
     <div class="container pt-5">
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col">
-                <h2 class="text-white">Hello, I'm</h2>
-                <h1 class="text-warning m-heading">Abdulrahman Alsayad</h1>
-                <h2 class="text-white">Web Developer</h2>
+            <div class="col p-5">
+                <h2 class="">Hello, We're</h2>
+                <h1 class="m-heading fw-bolder">AdaDevs</h1>
+                <h2 class="">Software Development Team</h2>
             </div>
             <div class="col">
                 <img src="images/developer_pic.png" alt="" class="img-fluid">
@@ -65,8 +64,8 @@
             <div class="col-lg-6 d-none d-md-inline">
                 <img src="images/about.png" alt="" class="img-fluid">
             </div>
-            <div class="col-lg-6 p-5 text-white">
-                <h1 class="text-warning m-heading pb-3">About Me</h1>
+            <div class="col-lg-6 p-5 text-white ">
+                <h1 class=" m-heading pb-3">About Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nisi ipsa error quis fugit!
                     Laboriosam deserunt voluptatum ipsam architecto modi rerum in. Exercitationem velit dicta quidem.
                     Reiciendis, vitae! Ea, deleniti.
@@ -83,55 +82,88 @@
             </div>
         </div>
     </div>
+
+    <div class="container p-3" id="team_memebers"">
+        <h1 class="m-heading p-3">Our Team Members</h1>
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <img src="images/photo_2024-11-16_17-27-19.jpg" class="rounded-circle p-3" style="width: 300px ; height: 300px;" alt="Team Member">
+                    <h3>Fadi abo asli</h3>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="carousel-item text-center">
+                    <img src="images/bulldog-with-its-long-tongue-out-lying-white-background (1).jpg" class="rounded-circle p-3" style="width: 300px; height: 300px;" alt="Team Member">
+                    <h3>Ahed Sulieman</h3>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="carousel-item  text-center">
+                    <img src="images/very-sweet-solitary-burro-standing-grass-meadow (1).jpg" class="rounded-circle p-3" style="width: 300px; height: 300px;" alt="Team Member">
+                    <h3>Abdulrahman Mohsen</h3>
+                    <p>Mobile Developer</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+
     <div class="container pb-3" id="projects">
-        <h1 class="text-warning p-3 m-heading">My Projects</h1>
+        <h1 class="p-3 m-heading">Our Projects</h1>
         <div class="row g-3 g-md-3">
             <div class="col-lg-3 ">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/JEMA_GER_1722-09[1].jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Click2Buy</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h5 class="card-title text-dark">Click2Buy</h5>
+                        <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-warning">Check Project</a>
+                        <a href="#" class="btn text-white" style="background-color: #8E24AA;">Check Project</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 ">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/254436-P4M571-488.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">MediGear</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h5 class="card-title text-dark">MediGear</h5>
+                        <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-warning">Check Project</a>
+                        <a href="#" class="btn text-white" style="background-color: #8E24AA;">Check Project</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 ">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/JEMA_GER_1722-09[1].jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h5 class="card-title text-dark">Card title</h5>
+                        <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-warning">Check Project</a>
+                        <a href="#" class="btn text-white" style="background-color: #8E24AA;">Check Project</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 ">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="images/JEMA_GER_1722-09[1].jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        <h5 class="card-title text-dark">Card title</h5>
+                        <p class="card-text text-dark">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                        <a href="#" class="btn btn-warning">Check Project</a>
+                        <a href="#" class="btn text-white" style="background-color: #8E24AA;">Check Project</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <footer class="m-4" id="contact">
         <div class="d-flex justify-content-center p-2 m-2">
@@ -141,7 +173,8 @@
             <a href="https://github.com/abdsyd " class="a_contact">
                 <i class="fab fa-github fa-2x text-secondary  px-1"></i>
             </a>
-            <a href="https://www.instagram.com/abd_alsayad/profilecard/?igsh=MTI1cjV5NzNpczlmeQ==" class="a_contact" target="_blank">
+            <a href="https://www.instagram.com/abd_alsayad/profilecard/?igsh=MTI1cjV5NzNpczlmeQ==" class="a_contact"
+                target="_blank">
                 <i class="fab fa-instagram fa-2x text-secondary px-1"></i>
             </a>
             <a href="https://wa.me/message/3U62MUUZDBAHP1?src=qr" class="a_contact" target="_blank">
