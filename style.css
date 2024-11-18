@@ -1,0 +1,29 @@
+body{
+    background-color: #1f2235;
+}
+.m-heading{
+    font-family: "Roboto Slab",serif;
+}
+.nav-link{
+    border: 2px solid transparent;
+}
+.nav-link:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+}
+.card{
+    border-bottom: 6px solid #f5ba09;
+}
+.media_link{
+    max-width: 15rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+}
+.media_link:hover{
+    background-color: #f5ba09;
+}
+.a_contact:hover i{
+    color: #f5ba09 !important;
+    
+}
