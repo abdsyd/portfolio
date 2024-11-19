@@ -14,7 +14,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style1.css">
-    i
+    <style>
+        .sticky-top {
+            position: sticky;
+            top: 200; /* Adjust this to set the sticky offset from the top */
+            z-index: -4;
+        }
+        canvas {
+            position: absolute;
+            left: 0;   /* Start at the left */
+            top: 300px;
+            height: 300px;
+            width: 300px;
+            z-index: -3;
+
+            /* Animation */
+
+            animation: moveCanvas 15s linear infinite alternate, bounceCanvas 8s ease-in-out infinite;
+            
+        }
+
+        @keyframes moveCanvas {
+            0% {
+                left: 0; /* Start at the left */
+            }
+            100% {
+                left: calc(100% - 400px); /* Move to the right edge */
+            }
+        }
+        @keyframes bounceCanvas {
+            0%, 100% {
+                top: 50px; /* Starting and ending top position */
+            }
+            50% {
+                top: 150px; /* Move down */
+            }
+        }
+    </style>
     
 </head>
 
@@ -48,6 +84,10 @@
             </div>
         </div>
     </nav>
+
+    <div class="sticky-top">
+        <canvas id="randomCanvas"></canvas>
+    </div>
 
     <div class="container pt-5">
         <div class="row d-flex justify-content-center align-items-center">
@@ -197,4 +237,66 @@
         crossorigin="anonymous"></script>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+<script src="https://aaroniker.me/range.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="assets/js/jellyshape.js"></script>
+
+<!-- <script>
+    const canvas = document.getElementById("randomCanvas");
+
+    // Function to generate random values within a range
+    function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+
+    // Function to animate the canvas with random movement
+    function randomMovement() {
+        const randomX = getRandom(0, window.innerWidth - 400); // Random x position
+        const randomY = getRandom(0, window.innerHeight - 400); // Random y position
+        const randomDuration = getRandom(3, 5); // Random animation duration (2 to 5 seconds)
+
+        // Apply random positions and duration
+        canvas.style.transition = `all ${randomDuration}s `;
+        canvas.style.left = `${randomX}px`;
+        canvas.style.top = `${randomY}px`;
+
+        // Repeat the movement after the animation ends
+        setTimeout(randomMovement, randomDuration * 1000);
+    }
+
+    // Start the random movement
+    randomMovement();
+</script> -->
+
+<!-- <script>
+    const canvas = document.getElementById("movingCanvas");
+
+    let position = 0; // Initial position
+    let direction = 1; // 1 means moving right, -1 means moving left
+    const speed = 2; // Pixels per frame
+    const canvasWidth = 200; // Canvas width (update if size changes)
+    const pageWidth = window.innerWidth; // Get the width of the viewport
+
+    function animate() {
+        // Update position
+        position += direction * speed;
+
+        // Reverse direction if it hits the page boundaries
+        if (position + canvasWidth >= pageWidth || position <= 0) {
+            direction *= -1;
+        }
+
+        // Apply the new position
+        canvas.style.left = position + "px";
+
+        // Request the next frame
+        requestAnimationFrame(animate);
+    }
+
+    // Start animation
+    animate();
+
+</script> -->
 </html>
