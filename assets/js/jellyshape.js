@@ -43,7 +43,7 @@ void main() {
 
 $(document).ready(function () {
     // Range SLiders
-    const speedSlider = 15;
+    const speedSlider = 30;
     const spikesSlider = 2.5;
     const processingSlider = 1;
 

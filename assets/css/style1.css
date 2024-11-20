@@ -31,4 +31,37 @@ body {
     color: #8E24AA !important;
     
 }  
-  
+.sticky-top {
+    top: 200; /* Adjust this to set the sticky offset from the top */
+    z-index: -4;
+}
+canvas {
+    position: absolute;
+    left: 0;   /* Start at the left */
+    top: 300px;
+    height: 300px;
+    width: 300px;
+    z-index: -3;
+
+    /* Animation */
+
+    animation: moveCanvas 15s linear infinite alternate, bounceCanvas 10s ease-in-out infinite;
+    
+}
+
+@keyframes moveCanvas {
+    0% {
+        left: 0; /* Start at the left */
+    }
+    100% {
+        left: calc(100% - 65rem); /* Move to the right edge */
+    }
+}
+@keyframes bounceCanvas {
+    0%, 100% {
+        top: 50px; /* Starting and ending top position */
+    }
+    50% {
+        top: 650px; /* Move down */
+    }
+}
